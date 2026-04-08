@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F4FAFC; /* Light ice blue from the hero section */
+  --foreground: #0A192A; /* Dark navy */
+  
+  --primary: #0A192A; 
+  --primary-foreground: #FFFFFF;
+  
+  --accent: #00BA51; /* Vibrant green */
+  --accent-foreground: #FFFFFF;
+  
+  --muted: #64748B;
+  --muted-foreground: #64748B;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  /* Font matching standard modern sans */
+  --font-sans: "Inter", "system-ui", "sans-serif";
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.section-padding {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+@media (min-width: 768px) {
+  .section-padding {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .section-padding {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
