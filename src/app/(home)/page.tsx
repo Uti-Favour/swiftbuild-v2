@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 
 import { Navbar } from "./_components/Navbar";
 import { HeroSection } from "./_components/HeroSection";
-import { FeaturesSection } from "./_components/FeaturesSection";
-import { EligibilitySection } from "./_components/EligibilitySection";
-import { CaseStudiesSection } from "./_components/CaseStudiesSection";
+import { ServiceSection } from "./_components/ServiceSection";
+import { CaseSturdySection } from "./_components/CaseSturdySection";
 import { FaqSection } from "./_components/FaqSection";
 import { CtaSection } from "./_components/CtaSection";
 import { FooterSection } from "./_components/FooterSection";
@@ -21,9 +20,9 @@ export default function HomePage() {
       <Navbar />
       <main>
         <HeroSection />
-        <FeaturesSection />
-        <EligibilitySection />
-        <CaseStudiesSection />
+        <ServiceSection />
+        <CaseSturdySection />
+        {/* <CaseStudiesSection /> */}
         <FaqSection />
       </main>
       <CtaSection />

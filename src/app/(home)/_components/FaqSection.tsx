@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FAQ_ITEMS } from "@/lib/data/landing";
+import { Minus, Plus } from "lucide-react";
 
 export function FaqSection() {
   const [openId, setOpenId] = useState<string | null>(null);
@@ -38,13 +39,9 @@ export function FaqSection() {
                   {/* Plus/Minus icon */}
                   <div className="shrink-0 ml-4 flex items-center justify-center">
                     {isOpen ? (
-                      <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M20 12H4" />
-                      </svg>
+                      <Minus className="w-5 h-5 text-muted-foreground" strokeWidth={2.5} />
                     ) : (
-                      <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
-                      </svg>
+                      <Plus className="w-5 h-5 text-accent" strokeWidth={2.5} />
                     )}
                   </div>
                 </button>

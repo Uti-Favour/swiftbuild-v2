@@ -1,4 +1,5 @@
 import { FOOTER_LINKS } from "@/lib/data/landing";
+import { ArrowRight } from "lucide-react";
 
 export function FooterSection() {
   return (
@@ -25,9 +26,7 @@ export function FooterSection() {
                 className="w-full sm:w-auto px-6 py-2.5 bg-[#12C85D] hover:bg-[#12C85D]/90 text-white rounded-full font-bold text-xs tracking-wider transition-colors inline-flex justify-center items-center gap-2"
               >
                 SUBSCRIBE
-                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
+                <ArrowRight className="w-3.5 h-3.5" strokeWidth={2.5} />
               </button>
             </div>
             

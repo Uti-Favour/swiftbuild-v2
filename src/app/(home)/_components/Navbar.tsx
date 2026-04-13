@@ -38,8 +38,8 @@ export function Navbar() {
         <div className="max-w-[1240px] mx-auto px-6 lg:px-8 flex items-center justify-between">
           
           {/* Logo */}
-          <Link href="/" className="text-2xl font-black tracking-tighter text-[#111A24]">
-            SwiftBuild<span className="text-[#13C55E]">.</span>
+          <Link href="/" className="text-2xl font-black tracking-tighter text-[#00008B]">
+            SwiftBuild<span className="text-[#00008B]">.</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -59,7 +59,7 @@ export function Navbar() {
           {/* Desktop CTA */}
           <Link
             href="#contact"
-            className="hidden md:inline-flex items-center px-6 py-[10px] rounded-full bg-[#111A24] text-white text-[14px] font-bold shadow-md hover:shadow-lg hover:bg-[#111A24]/90 transition-all"
+            className="hidden md:inline-flex items-center px-6 py-[10px] rounded-full bg-[#00008B] text-white text-[14px] font-bold shadow-md hover:shadow-lg hover:bg-[#111A24]/90 transition-all"
           >
             Contact Us
           </Link>

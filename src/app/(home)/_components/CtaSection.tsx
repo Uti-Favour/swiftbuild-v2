@@ -1,3 +1,5 @@
+import { ArrowRight } from "lucide-react";
+
 export function CtaSection() {
   return (
     <section className="bg-[#101b24] py-24 sm:py-32 border-b border-[#203f5c]">
@@ -12,9 +14,7 @@ export function CtaSection() {
 
         <button className="px-8 py-[14px] bg-white text-[#101b24] rounded-full font-bold text-xs tracking-wide hover:bg-gray-100 transition-colors inline-flex items-center gap-2 shadow-sm">
           APPLY
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-          </svg>
+          <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
         </button>
       </div>
     </section>
