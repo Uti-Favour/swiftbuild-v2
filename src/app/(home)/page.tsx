@@ -25,7 +25,7 @@ export default function HomePage() {
         <ServiceSection />
         <CaseSturdySection />
         <PricingSection />
-        <TestimonialSection />
+        {/* <TestimonialSection /> */}
         <FaqSection />
       </main>
       <CtaSection />
