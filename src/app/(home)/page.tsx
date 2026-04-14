@@ -4,6 +4,8 @@ import { Navbar } from "./_components/Navbar";
 import { HeroSection } from "./_components/HeroSection";
 import { ServiceSection } from "./_components/ServiceSection";
 import { CaseSturdySection } from "./_components/CaseSturdySection";
+import { PricingSection } from "./_components/PricingSection";
+import { TestimonialSection } from "./_components/TestimonialSection";
 import { FaqSection } from "./_components/FaqSection";
 import { CtaSection } from "./_components/CtaSection";
 import { FooterSection } from "./_components/FooterSection";
@@ -22,7 +24,8 @@ export default function HomePage() {
         <HeroSection />
         <ServiceSection />
         <CaseSturdySection />
-        {/* <CaseStudiesSection /> */}
+        <PricingSection />
+        <TestimonialSection />
         <FaqSection />
       </main>
       <CtaSection />

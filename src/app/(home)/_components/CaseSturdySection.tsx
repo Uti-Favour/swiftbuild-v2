@@ -29,7 +29,7 @@ export function CaseSturdySection() {
   };
 
   return (
-    <section className="bg-background py-24 lg:py-32 relative">
+    <section id="case-studies" className="bg-background py-24 lg:py-32 relative">
       
       {/* Desktop Navigation Arrows (Hidden on Mobile) */}
       <button 
@@ -48,11 +48,23 @@ export function CaseSturdySection() {
         <ChevronRight className="w-6 h-6" strokeWidth={2.5} />
       </button>
 
+      <div className="section-padding max-w-[1500px] mx-auto mb-16 lg:mb-20 text-center">
+        <span className="text-[#F5A623] font-bold text-sm tracking-[0.15em] uppercase block mb-4">
+          Success Stories
+        </span>
+        <h2 className="text-[36px] sm:text-[44px] lg:text-[56px] font-extrabold text-[#111A24] mb-6 tracking-tight leading-[1.1]">
+          Proven Results for Scaling Businesses
+        </h2>
+        <p className="text-[#4B5563] text-[16px] lg:text-[18px] leading-[1.7] font-medium max-w-[700px] mx-auto">
+          See how we help founders and growing teams automate operations and ship world-class software that drives real impact.
+        </p>
+      </div>
+
       {/* Main Container */}
-      <div className="section-padding max-w-[1240px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+      <div className="section-padding max-w-[1500px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
         
         {/* Left Side: Images Carousel */}
-        <div className="relative aspect-[4/5] w-full max-w-[500px] mx-auto lg:mx-0 overflow-hidden rounded-md shadow-sm">
+        <div className="relative aspect-[4/5] w-full max-w-[500px] mx-auto lg:mx-0 overflow-hidden rounded-[40px] shadow-sm">
           {ELIGIBILITY_SLIDES.map((item, index) => (
             <img
               key={item.id}
@@ -69,7 +81,7 @@ export function CaseSturdySection() {
         <div className="flex flex-col items-start text-left max-w-[500px] mx-auto lg:mx-0 w-full">
           
           {/* Dynamic Icon Header Block */}
-          <div className="w-[76px] h-[76px] rounded-full bg-[#111A24] shadow flex items-center justify-center mb-10 overflow-hidden relative">
+          <div className="w-[76px] h-[76px] rounded-full bg-[#00008B] shadow flex items-center justify-center mb-10 overflow-hidden relative">
             {ELIGIBILITY_SLIDES.map((item, index) => (
               <div 
                 key={item.id}
@@ -102,8 +114,8 @@ export function CaseSturdySection() {
             ))}
           </div>
 
-          <button className="mt-8 px-9 py-[14px] bg-[#111A24] text-white rounded-full font-semibold text-sm hover:bg-[#111A24]/90 transition-colors shadow-sm">
-            Learn More
+          <button className="mt-8 px-9 py-[14px] bg-[#00008B] text-white rounded-full font-bold text-sm tracking-wide hover:bg-[#00008B]/90 hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-[#00008B]/20">
+            Read Case Study
           </button>
 
           {/* Desktop Single-row simple specific Carousel Dots (Hidden on mobile because it's bundled in the next section) */}

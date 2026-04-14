@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F4FAFC; /* Light ice blue from the hero section */
+  --background: #FFFFFF; /* Light ice blue from the hero section */
   --foreground: #0A192A; /* Dark navy */
   
   --primary: #0A192A; 

@@ -4,7 +4,7 @@ import { SERVICE_CARDS, SERVICE_SECTION_CONTENT } from "@/lib/data/services";
 
 export function ServiceSection() {
   return (
-    <section className="relative bg-[#00008B] py-24 lg:py-32 overflow-hidden rounded-tr-5xl rounded-t-[60px]">
+    <section id="services" className="relative bg-[#00008B] py-24 lg:py-32 overflow-hidden rounded-tr-5xl">
       <div className="relative z-10 section-padding mx-auto">
 
         <div className="text-center max-w-[800px] mx-auto mb-16">
@@ -20,13 +20,13 @@ export function ServiceSection() {
           {SERVICE_CARDS.map((card, i) => (
             <div
               key={i}
-              className="bg-white rounded-3xl p-7 flex flex-col justify-between min-h-[200px] lg:min-h-[280px] shadow-sm "
+              className="group bg-white rounded-3xl p-8 flex flex-col justify-between min-h-[200px] lg:min-h-[280px] hover:-translate-y-1.5 transition-all duration-400 ease-out shadow-sm hover:shadow-xl hover:shadow-black/5 border border-transparent hover:border-gray-100"
             >
-              <div className="w-[50px] h-[50px] rounded-xl bg-[#00008B] flex items-center justify-center text-white mb-auto shadow-sm">
-                <card.icon className="w-[25px] h-[25px]" strokeWidth={1.75} />
+              <div className="w-[56px] h-[56px] rounded-2xl bg-[#00008B]/[0.04] group-hover:bg-[#00008B] flex items-center justify-center text-[#00008B] group-hover:text-white mb-auto transition-colors duration-300">
+                <card.icon className="w-[26px] h-[26px]" strokeWidth={1.75} />
               </div>
 
-              <p className="text-xl sm:text-[17px] lg:text-2xl text-[#111111] leading-[1.4] mt-8 font-semibold">
+              <p className="text-xl sm:text-[17px] lg:text-[22px] text-[#111111] leading-[1.4] mt-8 font-medium">
                 {card.text}
                 {card.boldText && <span className="font-bold">{card.boldText}</span>}
               </p>

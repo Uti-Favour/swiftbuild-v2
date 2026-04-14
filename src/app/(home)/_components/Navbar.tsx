@@ -59,7 +59,7 @@ export function Navbar() {
           {/* Desktop CTA */}
           <Link
             href="#contact"
-            className="hidden md:inline-flex items-center px-6 py-[10px] rounded-full bg-[#00008B] text-white text-[14px] font-bold shadow-md hover:shadow-lg hover:bg-[#111A24]/90 transition-all"
+            className="hidden md:inline-flex items-center px-6 py-[10px] rounded-full bg-[#00008B] text-white text-[14px] font-bold shadow-md hover:shadow-lg  transition-all"
           >
             Contact Us
           </Link>
@@ -111,7 +111,7 @@ export function Navbar() {
                 <Link
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-[32px] font-bold text-[#111A24] tracking-tight hover:text-[#13C55E] transition-colors inline-block"
+                  className="text-[32px] font-bold text-[#111A24] tracking-tight hover:text-[#00008B] transition-colors inline-block"
                 >
                   {link.label}
                 </Link>
@@ -128,7 +128,7 @@ export function Navbar() {
             <Link
               href="#contact"
               onClick={() => setIsOpen(false)}
-              className="flex items-center justify-center w-full px-8 py-4 rounded-full bg-[#111A24] text-white text-[16px] font-bold shadow-md hover:shadow-lg transition-all"
+              className="flex items-center justify-center w-full px-8 py-4 rounded-full bg-[#00008B] text-white text-[16px] font-bold shadow-md hover:shadow-lg hover:bg-[#00008B]/90 hover:-translate-y-1 transition-all"
             >
               Contact Us
             </Link>

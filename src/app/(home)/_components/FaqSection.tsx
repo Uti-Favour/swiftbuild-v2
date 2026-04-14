@@ -25,35 +25,35 @@ export function FaqSection() {
             return (
               <div 
                 key={item.id} 
-                className={`border rounded-lg overflow-hidden transition-all duration-300 ${isOpen ? 'border-border bg-card shadow-sm' : 'border-transparent bg-muted/30'}`}
+                className={`border-b transition-colors duration-300 ${isOpen ? 'border-[#00008B]' : 'border-gray-200'}`}
               >
                 <button
                   onClick={() => toggleFaq(item.id)}
-                  className="w-full flex items-center justify-between px-6 py-5 text-left"
+                  className="w-full flex items-center justify-between py-6 text-left group"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-semibold text-foreground text-[15px]">
+                  <span className={`font-semibold text-[16px] sm:text-[18px] transition-colors duration-200 ${isOpen ? 'text-[#00008B]' : 'text-gray-700 group-hover:text-[#00008B]'}`}>
                     {item.question}
                   </span>
                   
                   {/* Plus/Minus icon */}
                   <div className="shrink-0 ml-4 flex items-center justify-center">
                     {isOpen ? (
-                      <Minus className="w-5 h-5 text-muted-foreground" strokeWidth={2.5} />
+                      <Minus className="w-5 h-5 text-[#00008B]" strokeWidth={2.5} />
                     ) : (
-                      <Plus className="w-5 h-5 text-accent" strokeWidth={2.5} />
+                      <Plus className="w-5 h-5 text-gray-400 group-hover:text-[#00008B] transition-colors duration-200" strokeWidth={2.5} />
                     )}
                   </div>
                 </button>
 
                 <div
-                  className={`grid transition-[grid-template-rows] duration-300 ${
+                  className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
                     isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <div className="px-6 pb-5 pt-0">
-                      <p className="text-sm text-muted-foreground leading-relaxed">
+                    <div className="pb-6 pt-0 pr-12">
+                      <p className="text-[15px] text-gray-600 leading-[1.8]">
                         {item.answer}
                       </p>
                     </div>
